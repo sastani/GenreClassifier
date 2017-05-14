@@ -9,7 +9,7 @@ def gen_features(dir, dlist):
     for genre_subdir in os.listdir(dir):
         genre_path = dir + "/" + genre_subdir
         #create a file of mfccs for all songs in that genre
-        mfcc_file = genre_path + "/genre_mfcc.csv"
+        mfcc_file = genre_path + "/" + genre_subdir +"_mfcc.csv"
         if os.path.isdir(genre_path):
             #create wav subdirectory if doesn't exist
             files = os.listdir(genre_path)

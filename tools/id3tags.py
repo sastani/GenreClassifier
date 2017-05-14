@@ -30,10 +30,10 @@ def get_metadata(file):
         g = "Unknown Genre"
     else:
         g = audio.get("genre")[0]
-    song_data["artist"] = a.encode("utf-16")
-    song_data["title"] = t.encode("utf-16")
-    song_data["album"] = al.encode("utf-16")
-    song_data["genre"] = g.encode("utf-16")
+    song_data["artist"] = a.encode("utf-8")
+    song_data["title"] = t.encode("utf-8")
+    song_data["album"] = al.encode("utf-8")
+    song_data["genre"] = g.encode("utf-8")
     return song_data
 
 def get_artist_title(file):
