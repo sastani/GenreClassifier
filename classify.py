@@ -38,12 +38,15 @@ def validate(x_test, y_test, clf):
     count = 0
     y_pred = []
     for i in range(num_test):
-        pred = clf.predict(x_test[i])
+        x = x_test[i].reshape(1,-1)
+        pred = clf.predict(x)
         pred = pred[0]
-        print(pred)
         y_pred.append(pred)
         actual_label = y_test[i]
-        print(actual_label)
+        if i < 5:
+            print(x.shape)
+            print(pred)
+            print(actual_label)
         if(actual_label == pred):
             count = count + 1
     cm = pd.crosstab(pd.Series(y_pred), pd.Series(y_test), rownames=['Predicted'], colnames=['Actual'], margins=True)
@@ -51,14 +54,11 @@ def validate(x_test, y_test, clf):
     return count, accuracy, cm
 
 def check_size(list):
-    new_list = []
     min_size = min(len(i) for i in list)
-    for i in list:
-        if len(i) > min_size:
-            i = i[:min_size]
-            print(i)
-        new_list.append(i)
-    return new_list
+    for i in range(len(list)):
+        if len(list[i]) > min_size:
+            list[i] = list[i][:min_size]
+    return list
 
 
 

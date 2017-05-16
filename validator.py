@@ -3,6 +3,7 @@ from tools.get_files import get_mfcc_files
 from models import support_vec_machine, knn, gaussian_nb
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import train_test_split
+from models.support_vec_machine import gs_for_eachkernel
 
 def kfold_cv(x, y, k):
     files = ["./svm.csv", "./knn.csv", "./gaussian_nb.csv"]
@@ -58,10 +59,12 @@ def kfold_models(x, y, k):
         write_csv(f, mean)
 
 def main():
-    mfcc_files = get_mfcc_files("/Users/Sina/Documents/Dataset")
+    mfcc_files = get_mfcc_files("/Users/sina/Documents/Dataset")
     d = get_all_data(mfcc_files)
     x, y = preprocess_and_seperate(d)
     kfold_models(x, y, 10)
+    gs_for_eachkernel(d)
+
 
 if __name__ == '__main__':
     main()

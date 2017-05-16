@@ -1,6 +1,7 @@
 from __future__ import division
 from sklearn import svm
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, train_test_split
+from tools.get_files import *
 from classify import *
 import numpy as np
 
@@ -9,7 +10,7 @@ def grid_search(x, y, kernel):
     trainData, testData, trainLabels, testLabels = train_test_split(x, y, test_size=0.20, random_state=0, stratify=y)
     parameters = {}
     k = [kernel]
-    costs = [0.01, 0.1, 1, 10, 100]
+    costs = [0.1, 1, 10, 100, 1000]
     gammas = [0.001, 0.01, 0.1, 1]
     degrees = [1, 2, 3]
     parameters['kernel'] = k
