@@ -34,11 +34,14 @@ def read_mfcc_csv(file):
     i = 0
     for row in csvreader:
         song = []
-        song_info = row[0:3]
-        for i in song_info:
-            song.append(i)
-        m = row[3:-2]
-        song.append(m)
+        m = row[3:-1]
+        all_mfccs = []
+        for frame in m:
+            frame = frame[1:-1]
+            f = frame.split(",")
+            actual_nums = [float(x) for x in f]
+            all_mfccs.append(actual_nums)
+        song.append(all_mfccs)
         label = row[-1]
         song.append(label)
         genre.append(song)

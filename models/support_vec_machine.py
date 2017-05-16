@@ -24,11 +24,10 @@ def grid_search(x, y, kernel):
 
 def gs_for_eachkernel(d):
     x, y = preprocess_and_seperate(d)
-    feat, label = get_feats_labels(x, y)
     outfile = open("svm_output.txt", "w")
     kernels = ['linear', 'poly', 'rbf']
     for k in kernels:
-        params, acc = grid_search(feat, label, k)
+        params, acc = grid_search(x, y, k)
         outfile.write("[INFO] grid search best parameters: {}".format(params))
         outfile.write('\n')
         outfile.write("[INFO] grid search accuracy: {:.2f}%".format(acc * 100))
