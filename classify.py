@@ -1,7 +1,6 @@
 from __future__ import division
 from tools.csv_tools import *
 import numpy as np
-from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 import pandas as pd
 
@@ -13,7 +12,9 @@ def get_all_data(files):
             all_data.append(s)
     return all_data
 
-#scale features and seperate into input and output
+#split data into input and output numpy arrays
+#concatenate mfccs for each frame
+#scale features
 def preprocess_and_seperate(data):
     y = []
     all_feats = []
@@ -21,23 +22,16 @@ def preprocess_and_seperate(data):
         mfccs_in_song = song[0]
         oned_mfccs_in_song = []
         for frame in mfccs_in_song:
-            print(lemn)
             for m in frame:
                 oned_mfccs_in_song.append(m)
         all_feats.append(oned_mfccs_in_song)
         label = song[-1]
         y.append(label)
-    num_feat_vec = len(all_feats)
-    feat = np.array(all_feats[0])
-    feat = feat.reshape(1, feat.size)
-    for i in range(1, num_feat_vec):
-        nfeat = np.array(all_feats[i])
-        nfeat = nfeat.reshape(1, feat.size)
-        feat = np.vstack((feat, nfeat))
-    print(feat.shape)
+    all_feats = check_size(all_feats)
+    feat = np.array(all_feats)
     feat = preprocessing.scale(feat)
-    f = feat.tolist()
-    return f, y
+    y = np.array(y)
+    return feat, y
 
 def validate(x_test, y_test, clf):
     num_train = len(y_test)
@@ -49,7 +43,6 @@ def validate(x_test, y_test, clf):
         pred = clf.predict([x_test[i]])
         pred = pred[0]
         y_pred.append(pred)
-        row = []
         actual_label = y_test[i]
         if(actual_label == pred):
             count = count + 1
@@ -57,9 +50,15 @@ def validate(x_test, y_test, clf):
     accuracy = (count/num_train)
     return count, accuracy, cm
 
-
-
-
+def check_size(list):
+    new_list = []
+    min_size = min(len(i) for i in list)
+    for i in list:
+        if len(i) > min_size:
+            i = i[:min_size]
+            print(i)
+        new_list.append(i)
+    return new_list
 
 
 

@@ -1,6 +1,5 @@
 from __future__ import division
 from sklearn import svm
-from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from classify import *
 import numpy as np
