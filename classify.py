@@ -34,20 +34,20 @@ def preprocess_and_seperate(data):
     return feat, y
 
 def validate(x_test, y_test, clf):
-    num_train = len(y_test)
+    num_test = len(y_test)
     count = 0
     y_pred = []
-    for i in range(num_train):
-        for x in range(len(x_test[i])):
-            x_test[i][x] = float(x_test[i])
-        pred = clf.predict([x_test[i]])
+    for i in range(num_test):
+        pred = clf.predict(x_test[i])
         pred = pred[0]
+        print(pred)
         y_pred.append(pred)
         actual_label = y_test[i]
+        print(actual_label)
         if(actual_label == pred):
             count = count + 1
     cm = pd.crosstab(pd.Series(y_pred), pd.Series(y_test), rownames=['Predicted'], colnames=['Actual'], margins=True)
-    accuracy = (count/num_train)
+    accuracy = (count/num_test)
     return count, accuracy, cm
 
 def check_size(list):

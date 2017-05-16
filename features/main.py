@@ -45,5 +45,5 @@ def main(dir):
 
 
 if __name__ == "__main__":
-    dir = raw_input("Input the directory of dataset: ")
+    dir = "/Users/Sina/Documents/Dataset"
     main(dir)

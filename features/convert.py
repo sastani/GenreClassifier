@@ -13,7 +13,7 @@ def convert_wav(file, counter):
     song = AudioSegment.from_file(file, ext)
     msecs = song.duration_seconds * 1000
     halfpoint = msecs/2
-    thir_sec = song[halfpoint:(halfpoint+30000)]
+    thir_sec = song[halfpoint:(halfpoint+15000)]
     sample_rate = thir_sec.frame_rate
     #standard decibel range
     normal_db = [-32.0, -18.0]
