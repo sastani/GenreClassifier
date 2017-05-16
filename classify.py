@@ -43,10 +43,6 @@ def validate(x_test, y_test, clf):
         pred = pred[0]
         y_pred.append(pred)
         actual_label = y_test[i]
-        if i < 5:
-            print(x.shape)
-            print(pred)
-            print(actual_label)
         if(actual_label == pred):
             count = count + 1
     cm = pd.crosstab(pd.Series(y_pred), pd.Series(y_test), rownames=['Predicted'], colnames=['Actual'], margins=True)

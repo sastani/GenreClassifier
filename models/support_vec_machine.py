@@ -34,7 +34,7 @@ def gs_for_eachkernel(d):
         outfile.write('\n')
 
 def train_model(x_train_feat, y_train):
-    clf = svm.SVC(C=1, gamma=0.1, degree=1, kernel='rbf')
+    clf = svm.SVC()
     x_train_feat = np.array(x_train_feat)
     y_train = np.array(y_train)
     clf.fit(x_train_feat, y_train)
