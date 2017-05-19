@@ -1,0 +1,92 @@
+Total correct: 21
+Accuracy: 0.344262295082
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,0,0,0,2,4
+Electronic,0,7,8,6,1,22
+Jazz,2,2,1,3,0,8
+Rock,9,3,3,3,9,27
+All,13,12,12,12,12,61
+
+Total correct: 25
+Accuracy: 0.409836065574
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,0,0,2,1,5
+Electronic,2,7,4,1,1,15
+Jazz,2,2,3,8,2,17
+Rock,7,3,5,1,8,24
+All,13,12,12,12,12,61
+
+Total correct: 24
+Accuracy: 0.393442622951
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,3,1,1,1,2,8
+Electronic,5,7,3,4,0,19
+Jazz,1,2,2,5,1,11
+Rock,4,2,6,2,9,23
+All,13,12,12,12,12,61
+
+Total correct: 25
+Accuracy: 0.409836065574
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,1,3,1,0,7
+Electronic,3,7,7,3,1,21
+Jazz,4,1,1,7,2,15
+Rock,4,3,1,1,9,18
+All,13,12,12,12,12,61
+
+Total correct: 26
+Accuracy: 0.426229508197
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,1,0,1,1,1,4
+Electronic,2,9,5,2,2,20
+Jazz,5,2,1,7,0,15
+Rock,5,1,5,2,9,22
+All,13,12,12,12,12,61
+
+Total correct: 22
+Accuracy: 0.360655737705
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,0,0,1,1,0,2
+Electronic,1,8,3,2,4,18
+Hip Hop:Rap,0,0,1,0,0,1
+Jazz,1,2,2,6,1,12
+Rock,11,2,5,3,7,28
+All,13,12,12,12,12,61
+
+Total correct: 23
+Accuracy: 0.377049180328
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,3,0,3,1,1,8
+Electronic,4,7,4,4,0,19
+Jazz,1,1,1,4,2,9
+Rock,5,4,4,3,9,25
+All,13,12,12,12,12,61
+
+Total correct: 24
+Accuracy: 0.4
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,1,0,2,2,0,5
+Electronic,2,9,6,4,3,24
+Jazz,3,1,0,5,0,9
+Rock,6,2,4,1,9,22
+All,12,12,12,12,12,60
+
+Total correct: 24
+Accuracy: 0.4
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,1,1,1,1,1,5
+Electronic,2,5,7,2,1,17
+Jazz,2,1,1,8,0,12
+Rock,7,5,3,1,10,26
+All,12,12,12,12,12,60
+
+Total correct: 25
+Accuracy: 0.416666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,4,1,0,0,3,8
+Electronic,1,4,2,1,0,8
+Jazz,2,3,2,8,0,15
+Rock,5,4,8,3,9,29
+All,12,12,12,12,12,60
+
+Mean accuracy: 0.393797814208

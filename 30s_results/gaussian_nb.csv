@@ -1,0 +1,101 @@
+Total correct: 23
+Accuracy: 0.383333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,5,2,2,4,2,15
+Electronic,0,1,4,1,0,6
+Hip Hop:Rap,0,4,5,2,1,12
+Jazz,2,3,0,4,1,10
+Rock,5,2,1,1,8,17
+All,12,12,12,12,12,60
+
+Total correct: 26
+Accuracy: 0.433333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,3,1,0,3,9
+Electronic,2,4,3,2,1,12
+Hip Hop:Rap,2,3,6,1,0,12
+Jazz,1,1,2,7,1,12
+Rock,5,1,0,2,7,15
+All,12,12,12,12,12,60
+
+Total correct: 32
+Accuracy: 0.533333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,8,1,1,1,2,13
+Electronic,0,3,0,2,0,5
+Hip Hop:Rap,0,2,7,3,0,12
+Jazz,2,5,1,5,1,14
+Rock,2,1,3,1,9,16
+All,12,12,12,12,12,60
+
+Total correct: 28
+Accuracy: 0.466666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,3,2,1,2,0,8
+Electronic,0,2,2,1,1,6
+Hip Hop:Rap,0,3,7,1,2,13
+Jazz,2,3,1,8,1,15
+Rock,7,2,1,0,8,18
+All,12,12,12,12,12,60
+
+Total correct: 28
+Accuracy: 0.466666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,5,1,3,3,4,16
+Electronic,1,5,2,0,1,9
+Hip Hop:Rap,0,4,4,0,2,10
+Jazz,3,2,1,9,0,15
+Rock,3,0,2,0,5,10
+All,12,12,12,12,12,60
+
+Total correct: 29
+Accuracy: 0.483333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,5,2,1,4,3,15
+Electronic,0,5,1,0,2,8
+Hip Hop:Rap,2,2,8,1,1,14
+Jazz,1,1,0,5,0,7
+Rock,4,2,2,2,6,16
+All,12,12,12,12,12,60
+
+Total correct: 29
+Accuracy: 0.483333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,7,2,2,2,3,16
+Electronic,0,3,1,3,1,8
+Hip Hop:Rap,0,3,8,2,0,13
+Jazz,3,2,0,4,1,10
+Rock,2,2,1,1,7,13
+All,12,12,12,12,12,60
+
+Total correct: 34
+Accuracy: 0.566666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,4,0,1,1,1,7
+Electronic,2,7,2,0,3,14
+Hip Hop:Rap,0,3,8,1,1,13
+Jazz,0,1,0,8,0,9
+Rock,6,1,1,2,7,17
+All,12,12,12,12,12,60
+
+Total correct: 31
+Accuracy: 0.516666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,7,0,0,0,6,13
+Electronic,1,3,4,4,0,12
+Hip Hop:Rap,0,2,7,0,0,9
+Jazz,0,3,0,8,0,11
+Rock,4,4,1,0,6,15
+All,12,12,12,12,12,60
+
+Total correct: 34
+Accuracy: 0.566666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,5,2,1,2,3,13
+Electronic,0,4,2,2,0,8
+Hip Hop:Rap,0,3,8,0,0,11
+Jazz,1,2,0,8,0,11
+Rock,6,1,1,0,9,17
+All,12,12,12,12,12,60
+
+Mean accuracy: 0.49

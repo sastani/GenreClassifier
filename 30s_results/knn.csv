@@ -1,0 +1,90 @@
+Total correct: 19
+Accuracy: 0.316666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,0,0,1,0,0,1
+Electronic,1,7,10,6,0,24
+Jazz,4,1,0,4,4,13
+Rock,7,4,1,2,8,22
+All,12,12,12,12,12,60
+
+Total correct: 21
+Accuracy: 0.35
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,0,1,0,1,1,3
+Electronic,1,7,3,4,2,17
+Jazz,3,2,1,6,1,13
+Rock,8,2,8,1,8,27
+All,12,12,12,12,12,60
+
+Total correct: 23
+Accuracy: 0.383333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,0,0,0,2,4
+Electronic,1,8,4,3,2,18
+Jazz,3,3,1,6,1,14
+Rock,6,1,7,3,7,24
+All,12,12,12,12,12,60
+
+Total correct: 27
+Accuracy: 0.45
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,1,0,0,0,0,1
+Electronic,2,9,9,4,1,25
+Jazz,4,0,0,8,2,14
+Rock,5,3,3,0,9,20
+All,12,12,12,12,12,60
+
+Total correct: 28
+Accuracy: 0.466666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,1,0,1,1,0,3
+Electronic,2,10,4,2,2,20
+Jazz,5,0,1,8,1,15
+Rock,4,2,6,1,9,22
+All,12,12,12,12,12,60
+
+Total correct: 23
+Accuracy: 0.383333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Electronic,2,8,5,1,2,18
+Jazz,2,2,1,7,2,14
+Rock,8,2,6,4,8,28
+All,12,12,12,12,12,60
+
+Total correct: 19
+Accuracy: 0.316666666667
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,1,0,0,1,2,4
+Electronic,6,7,6,8,0,27
+Jazz,1,1,0,1,0,3
+Rock,4,4,6,2,10,26
+All,12,12,12,12,12,60
+
+Total correct: 21
+Accuracy: 0.35
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,1,0,2,0,5
+Electronic,1,8,6,5,3,23
+Jazz,0,2,1,3,1,7
+Rock,9,1,5,2,8,25
+All,12,12,12,12,12,60
+
+Total correct: 26
+Accuracy: 0.433333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,2,0,0,0,0,2
+Electronic,4,8,7,2,2,23
+Jazz,1,2,1,7,1,12
+Rock,5,2,4,3,9,23
+All,12,12,12,12,12,60
+
+Total correct: 29
+Accuracy: 0.483333333333
+Predicted,Country,Electronic,Hip Hop:Rap,Jazz,Rock,All
+Country,5,1,0,0,2,8
+Electronic,0,7,2,2,0,11
+Jazz,2,1,1,8,1,13
+Rock,5,3,9,2,9,28
+All,12,12,12,12,12,60
+
+Mean accuracy: 0.393333333333
